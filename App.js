@@ -1,12 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import CustomScrollView from './components/CustomScrollView';
+import StyledView from './components/StyledView';
+import ImageDisplay from './components/ImageDisplay';
+import StyledText from './components/StyledText';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <StyledView />
+      <CustomScrollView />
+       <ImageDisplay />
+      <StyledText /> 
+    </SafeAreaView>
   );
 }
 
